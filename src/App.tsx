@@ -101,9 +101,8 @@ const Dashboard = () => {
             <h3>0. Алгоритмические задачи</h3>
           </label>
           <p>
-            Сначала необходимо решить задачи в{" "}
-            <code>src/tasks/algorithms/</code> и проверить их, запустив{" "}
-            <code>npm run test</code>.
+            Необходимо решить задачи в <code>src/tasks/algorithms/</code> и
+            проверить их, запустив <code>npm run test</code>.
           </p>
           <ul className="checklist">
             <li
@@ -117,7 +116,13 @@ const Dashboard = () => {
                   checked={isCompleted("algo-1")}
                   onChange={() => toggleTask("algo-1")}
                 />
-                <span>1. Репка (Рекурсия и аккумуляция)</span>
+                <span>
+                  1. Репка (Рекурсия и аккумуляция)
+                  <br />
+                  <small>
+                    Файл: <code>src/tasks/algorithms/1-repka.ts</code>
+                  </small>
+                </span>
               </label>
             </li>
             <li
@@ -131,7 +136,13 @@ const Dashboard = () => {
                   checked={isCompleted("algo-2")}
                   onChange={() => toggleTask("algo-2")}
                 />
-                <span>2. Теремок (Стратегия LRU Cache)</span>
+                <span>
+                  2. Теремок (Стратегия LRU Cache)
+                  <br />
+                  <small>
+                    Файл: <code>src/tasks/algorithms/2-teremok.ts</code>
+                  </small>
+                </span>
               </label>
             </li>
             <li
@@ -145,7 +156,13 @@ const Dashboard = () => {
                   checked={isCompleted("algo-3")}
                   onChange={() => toggleTask("algo-3")}
                 />
-                <span>3. Колобок (Поиск циклов в графе)</span>
+                <span>
+                  3. Колобок (Поиск циклов в графе)
+                  <br />
+                  <small>
+                    Файл: <code>src/tasks/algorithms/3-kolobok.ts</code>
+                  </small>
+                </span>
               </label>
             </li>
           </ul>
@@ -161,6 +178,9 @@ const Dashboard = () => {
             <h3>1. Smart Search</h3>
           </label>
           <p>Debounce, AbortController, React 19 useOptimistic.</p>
+          <p>
+            Файл: <code>src/tasks/live-coding/1-SmartSearch.tsx</code>
+          </p>
           <Link to="/search">Перейти к задаче</Link>
         </section>
 
@@ -176,6 +196,9 @@ const Dashboard = () => {
             <h3>2. Virtual List</h3>
           </label>
           <p>Оптимизация рендеринга больших списков.</p>
+          <p>
+            Файл: <code>src/tasks/live-coding/2-VirtualList.tsx</code>
+          </p>
           <Link to="/virtual-list">Перейти к задаче</Link>
         </section>
 
@@ -189,6 +212,9 @@ const Dashboard = () => {
             <h3>3. Filter Sync</h3>
           </label>
           <p>Синхронизация стейта фильтров с URL.</p>
+          <p>
+            Файл: <code>src/tasks/live-coding/3-FilterSync.tsx</code>
+          </p>
           <Link to="/filter-sync">Перейти к задаче</Link>
         </section>
       </div>
