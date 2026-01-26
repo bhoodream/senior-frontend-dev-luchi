@@ -54,6 +54,7 @@ const VirtualListTask = () => {
         На главную
       </Link>
       <h2>Virtual List</h2>
+      <p className="task-description">Оптимизация рендеринга больших списков.</p>
       <VirtualList items={items} itemHeight={40} containerHeight={400} />
     </div>
   );

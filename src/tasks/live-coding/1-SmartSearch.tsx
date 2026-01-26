@@ -25,6 +25,7 @@ const SmartSearch = () => {
         На главную
       </Link>
       <h2>Smart Search</h2>
+      <p className="task-description">Debounce, AbortController, React 19 useOptimistic.</p>
       <input
         value={query}
         onChange={(e) => setQuery(e.target.value)}

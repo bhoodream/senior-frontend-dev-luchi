@@ -29,6 +29,7 @@ const FilterSyncTask = () => {
         На главную
       </Link>
       <h2>Filter Sync</h2>
+      <p className="task-description">Синхронизация стейта фильтров с URL.</p>
       <div style={{ marginBottom: "20px" }}>
         <label>Category</label>
         <input

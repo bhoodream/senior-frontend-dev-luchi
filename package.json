@@ -5,7 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "test": "vitest"
+    "test": "vitest",
+    "test:repka": "vitest run src/tasks/algorithms/1-repka.test.ts",
+    "test:teremok": "vitest run src/tasks/algorithms/2-teremok.test.ts",
+    "test:kolobok": "vitest run src/tasks/algorithms/3-kolobok.test.ts"
   },
   "dependencies": {
     "react": "^19.0.0",
