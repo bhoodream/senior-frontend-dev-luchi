@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import SmartSearch from "./tasks/live-coding/1-SmartSearch";
 import VirtualListTask from "./tasks/live-coding/2-VirtualList";
 import FilterSyncTask from "./tasks/live-coding/3-FilterSync";
-import ReviewSlides from "./presentation/ReviewSlides";
 
 const Dashboard = () => {
   const [step, setStep] = useState(() => {
@@ -363,7 +362,6 @@ function App() {
         <Route path="/search" element={<SmartSearch />} />
         <Route path="/virtual-list" element={<VirtualListTask />} />
         <Route path="/filter-sync" element={<FilterSyncTask />} />
-        <Route path="/review-slides" element={<ReviewSlides />} />
       </Routes>
     </BrowserRouter>
   );

@@ -30,3 +30,7 @@ coverage/
 # Misc
 .vercel
 .netlify
+
+# Review App
+review-app/
+review-questions.md
