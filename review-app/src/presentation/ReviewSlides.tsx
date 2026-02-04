@@ -262,11 +262,10 @@ const ReviewSlides = () => {
           <div className="intro-content">
             <h1 className="intro-title">Senior Frontend Developer ЛУЧИ</h1>
             <p className="intro-description">
-              Зачитываем вопрос (можно про себя) - отвечаем.
+              Читываем вопрос (можно про себя) - отвечаем
               <br />
-              Время на ответ ограничено.
-              <br />
-              Постепенно появляются наводящие вопросы.
+              Время на ответ ограничено: 5 минут
+              <br />С течением времени будут появляться наводящие вопросы
             </p>
             <div className="intro-stats">
               <div className="stat-item">
@@ -305,22 +304,16 @@ const ReviewSlides = () => {
               ← К вступлению
             </button>
           </div>
-          <div className="slides-right">
-            <span className="slides-hint">← вернуться к вопросам</span>
-          </div>
         </header>
         <main className="slides-main">
           <div className="slides-card-wrap">
             <article className="slide-card stack finish-card">
               <h2 className="finish-title">Теория завершена</h2>
-              <p className="finish-text">Отличная работа!</p>
-              <button
-                type="button"
-                className="start-button"
-                onClick={resetToIntro}
-              >
-                В начало
-              </button>
+              <p className="finish-text">
+                Отличная работа!
+                <br />
+                Теперь перейдем к практике
+              </p>
               <div className="finish-confetti" aria-hidden>
                 {confettiPieces.map((piece) => {
                   const style = {
